@@ -1,1 +1,87 @@
+.header {
+	position: relative;
+}
+.header-top {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	// .header-top__inner
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-family: 'AvertaCY';
+		font-size: 22px;
+		color: #fff;
+	}
+	// .header-top__phone
+	&__phone {
+		cursor: default;
+	}
+	// .header-top__phone-number
+	&__phone-number {
+	}
+	// .header-top__logo
+	&__logo {
+		max-width: 285px;
+		min-width: 285px;
+	}
+	// .header-top__logo-link
+	&__logo-link {
+	}
+	// .header-top__address
+	&__address {
+		cursor: default;
+	}
+	// .header-top__address-text
+	&__address-text {
+	}
+}
 
+//==========================================================================================================================================================
+// Слайдер
+.header-slider {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.slide {
+	height: 100vh;
+	overflow: hidden;
+	background-position: center center; // x - y
+	background-size: cover;
+	background-repeat: no-repeat;
+	// .slide__inner
+	&__inner {
+		padding-top: 350px;
+	}
+	// .slide__title
+	&__title {
+		font-family: 'Forum';
+		font-size: 56px;
+		color: #fff;
+	}
+}
+.slide--img1 {
+	background-image: url('/img/common/slide-1.webp');
+}
+.slide--img2 {
+	background-image: url('/img/common/slide-2.webp');
+}
+.slide--img3 {
+	background-image: url('/img/common/slide-3.webp');
+}
+.swiper-pagination {
+}
+.swiper-controls {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
