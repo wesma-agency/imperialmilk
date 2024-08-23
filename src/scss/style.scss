@@ -10,14 +10,14 @@
 
 // Оболочка
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+	font-family: 'AvertaCY', sans-serif;
+	font-size: 16px;
 	font-weight: 400;
-	line-height: 1.4;
-	color: #333;
-	background: #c0c0c0;
-	overflow-x: hidden;
-	overflow-y: scroll;
+	line-height: 1;
+	color: #313131;
+	background: #fff;
+	// overflow-x: hidden;
+	// overflow-y: scroll;
 	&.lock {
 		overflow: hidden;
 	}
@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-	max-width: 1140px;
+	max-width: 1270px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -61,31 +61,19 @@ body {
 
 @media (max-width: 767.98px) {
 	.container {
-		// max-width: 540px;
-		width: 100%;
+		max-width: 540px;
+		// width: 100%;
 	}
 }
 
 @media (max-width: 575.98px) {
 	.container {
-		// width: 100%;
+		width: 100%;
 	}
 }
 
 //=========================================================================================================================================================
 // Блоки
-// @import './_header';
-// @import './_main';
-// @import './_footer';
-
-// @media (max-width: 1199.98px) {
-// }
-
-// @media (max-width: 991.98px) {
-// }
-
-// @media (max-width: 767.98px) {
-// }
-
-// @media (max-width: 575.98px) {
-// }
+@import './_header';
+@import './_main';
+@import './_footer';
