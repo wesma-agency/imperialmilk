@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-@import './base/_fonts';
+@import './base/fonts';
 @import './base/null-style';
 @import 'swiper/css/bundle';
 
@@ -46,12 +46,12 @@ body {
 }
 .section-title {
 	font-family: 'Forum';
-	font-size: 56px;
+	font-size: 66px;
 	text-align: center;
 }
 .section-subtitle {
 	font-family: 'Forum';
-	font-size: 26px;
+	font-size: 36px;
 	text-align: center;
 }
 

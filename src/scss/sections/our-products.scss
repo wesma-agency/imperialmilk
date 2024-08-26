@@ -1,0 +1,69 @@
+.our-products {
+	// .our-products__inner
+	&__inner {
+	}
+	// .our-products__top
+	&__top {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		row-gap: 16px;
+		margin-bottom: 60px;
+	}
+	// .our-products__title
+	&__title {
+	}
+	// .our-products__subtitle
+	&__subtitle {
+	}
+	// .our-products__list
+	&__list {
+		// display: flex;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+		column-gap: 10px;
+	}
+	// .our-product__item
+	&__item {
+		overflow: hidden;
+		position: relative;
+		// min-width: 350px;
+		cursor: pointer;
+		&:hover {
+			img {
+				transform: scale(1.22);
+			}
+		}
+		&:nth-of-type(1) .our-products__item-title {
+			max-width: 8vw;
+		}
+	}
+	// .our-product__item-content
+	&__item-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: absolute;
+		padding: 32px;
+		width: 100%;
+		height: 100%;
+		font-family: 'Forum';
+		color: #fff;
+		z-index: 10;
+		cursor: pointer;
+	}
+	// .our-product__item-num
+	&__item-num {
+		font-size: 64px;
+	}
+	// .our-product__item-title
+	&__item-title {
+		font-size: 26px;
+	}
+	// .our-product__item-img
+	&__item-img {
+		width: 100%;
+		transition: all 0.3s ease-in-out;
+	}
+}

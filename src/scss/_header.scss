@@ -2,15 +2,17 @@
 	position: relative;
 }
 .header-top {
-	position: absolute;
+	// position: absolute;
+	padding: 35px 0;
 	width: 100%;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 10;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+	background-color: #051936;
+	// z-index: 10;
 	// .header-top__inner
 	&__inner {
-		margin-top: 35px;
+		// margin-top: 35px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -20,6 +22,7 @@
 	}
 	// .header-top__phone
 	&__phone {
+		color: #051936;
 		cursor: default;
 	}
 	// .header-top__phone-number
@@ -45,6 +48,7 @@
 //==========================================================================================================================================================
 // Слайдер
 .header-slider {
+	display: none;
 }
 .swiper {
 }
