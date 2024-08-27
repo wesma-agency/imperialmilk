@@ -26,14 +26,17 @@
 	}
 	// .advantages__item-num
 	&__item-num {
-		width: 124px;
+		min-width: 124px;
 		font-size: 64px;
+		// text-align: right;
 		color: #c39d7b;
 		// margin-bottom: 10px;
 	}
 	// .advantages__item-text
 	&__item-text {
+		min-width: 270px;
 		font-size: 34px;
+		text-align: right;
 		// text-wrap: balance;
 	}
 }
@@ -41,6 +44,7 @@
 .advantages__item-content {
 	display: flex;
 	align-items: start;
+	column-gap: 94px;
 	width: 100%;
 }
 
@@ -53,7 +57,8 @@
 .advantages-line-devider {
 	border-right: 2px solid #e7e6e1;
 	height: 172px;
-	margin-right: 94px;
+	// margin-left: 94px;
+	// margin-right: 94px;
 }
 .advantages-list-line {
 	width: 567px;
