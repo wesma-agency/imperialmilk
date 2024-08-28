@@ -62,7 +62,7 @@ function showFixedMenu() {
 window.addEventListener('scroll', showFixedMenu);
 
 function scrollToSEction() {
-	const links = document.querySelectorAll('.footer-column__link');
+	const links = document.querySelectorAll('.footer-top__links-item');
 
 	links.forEach((link) => {
 		link.addEventListener('click', (e) => {
