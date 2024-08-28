@@ -42,3 +42,19 @@ window.addEventListener('DOMContentLoaded', () => {
 function createSlider(slider, options = {}) {
 	return new Swiper(`${slider}`, options);
 }
+
+function showFixeMenu() {
+	const header = document.querySelector('.header-top');
+	const products = document.querySelector('.our-products__inner');
+	const scrollY = window.scrollY;
+
+	if (scrollY > header.clientHeight) {
+		header.classList.add('fixed');
+		products.style.paddingTop = header.clientHeight + 360 + 'px';
+	} else {
+		header.classList.remove('fixed');
+		products.style.paddingTop = 80 + 'px';
+	}
+}
+
+window.addEventListener('scroll', showFixeMenu);
