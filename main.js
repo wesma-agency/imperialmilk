@@ -19,6 +19,8 @@ window.addEventListener('DOMContentLoaded', () => {
 			clickable: true,
 		},
 	});
+
+	scrollToSEction();
 });
 
 // const slider = new Swiper('.swiper', {
@@ -43,12 +45,12 @@ function createSlider(slider, options = {}) {
 	return new Swiper(`${slider}`, options);
 }
 
-function showFixeMenu() {
+function showFixedMenu() {
 	const header = document.querySelector('.header-top');
 	const products = document.querySelector('.our-products__inner');
 	const scrollY = window.scrollY;
 
-	if (scrollY > header.clientHeight) {
+	if (scrollY > 154) {
 		header.classList.add('fixed');
 		products.style.paddingTop = header.clientHeight + 360 + 'px';
 	} else {
@@ -57,4 +59,23 @@ function showFixeMenu() {
 	}
 }
 
-window.addEventListener('scroll', showFixeMenu);
+window.addEventListener('scroll', showFixedMenu);
+
+function scrollToSEction() {
+	const links = document.querySelectorAll('.footer-column__link');
+
+	links.forEach((link) => {
+		link.addEventListener('click', (e) => {
+			e.preventDefault();
+
+			const href = link.getAttribute('href');
+			const sectionTop = document.querySelector(href).offsetTop - 154;
+			console.log(sectionTop);
+
+			scroll({
+				top: sectionTop,
+				behavior: 'smooth',
+			});
+		});
+	});
+}
