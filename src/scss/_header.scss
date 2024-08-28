@@ -10,6 +10,7 @@
 	&__inner {
 		display: flex;
 		justify-content: space-between;
+		column-gap: 56px;
 		align-items: center;
 		font-family: 'AvertaCY';
 		font-size: 22px;
@@ -17,8 +18,10 @@
 	}
 	// .header-top__phone
 	&__phone {
+		flex: 1 1 33.333333%;
 		// display: none;
 		color: #051936;
+		text-align: right;
 		cursor: default;
 	}
 	// .header-top__phone-number
@@ -42,9 +45,8 @@
 	}
 	// .header-top__address
 	&__address {
+		flex: 1 1 33.333333%;
 		cursor: default;
-		p {
-		}
 	}
 	// .header-top__address-text
 	&__address-text {
